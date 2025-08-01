@@ -1,428 +1,261 @@
-<x-layouts.guest :title="__('Home')">
-    <div class="relative overflow-hidden">
-        {{-- <div
-            class="absolute inset-2 bottom-0 _rounded-4xl ring-1 ring-black/5 ring-inset bg-linear-115 from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] sm:bg-linear-145">
-        </div> --}}
-        <div class="relative px-6 lg:px-8 | bg-linear-115 from-[#6d8a96] from-28% via-[#627c86] via-70% to-[#42575F]">
-            <div class="mx-auto max-w-2xl lg:max-w-7xl">
-                <header class="pt-5 sm:pt-8" data-headlessui-state="">
-                    <div class="">
-                        <div
-                            class="relative flex justify-between group/row relative isolate pt-[calc(--spacing(2)+1px)] last:pb-[calc(--spacing(2)+1px)]">
-                            <div aria-hidden="true" class="absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2">
-                                <div class="absolute inset-x-0 top-0 border-t border-black/5"></div>
-                                <div class="absolute inset-x-0 top-2 border-t border-black/5"></div>
-                                <div
-                                    class="absolute inset-x-0 bottom-0 hidden border-b border-black/5 group-last/row:block">
-                                </div>
-                                <div
-                                    class="absolute inset-x-0 bottom-2 hidden border-b border-black/5 group-last/row:block">
-                                </div>
-                            </div>
-                            <div class="relative flex gap-6">
-                                <div class="py-3 group/item relative">
-                                    <svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-first/item:block absolute size-[15px] fill-black/10 -top-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="absolute size-[15px] fill-black/10 -top-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-first/item:group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg>
+<x-layouts.guest :title="__('IT NEXVEL')">
 
-                                    <a title="Home" data-headlessui-state="" href="/">
-                                        <x-app-logo-svg class="w-[200px] px-2 fill-[#FFF] text-[#FFF]" />
-                                    </a>
-                                </div>
-                            </div>
-                            <nav class="relative hidden lg:flex">
-                                <div class="relative flex group/item relative"><svg viewBox="0 0 15 15"
-                                        aria-hidden="true"
-                                        class="hidden group-first/item:block absolute size-[15px] fill-black/10 -top-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="absolute size-[15px] fill-black/10 -top-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-first/item:group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><a
-                                        class="flex items-center px-4 py-3 text-base font-medium text-white _text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
-                                        data-headlessui-state="" href="/nosotros">Nosotros</a></div>
-                                <div class="relative flex group/item relative"><svg viewBox="0 0 15 15"
-                                        aria-hidden="true"
-                                        class="hidden group-first/item:block absolute size-[15px] fill-black/10 -top-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="absolute size-[15px] fill-black/10 -top-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-first/item:group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><a
-                                        class="flex items-center px-4 py-3 text-base font-medium text-white _text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
-                                        data-headlessui-state="" href="/soluciones-y-servicios">Soluciones y
-                                        servicios</a></div>
-                                <div class="relative flex group/item relative"><svg viewBox="0 0 15 15"
-                                        aria-hidden="true"
-                                        class="hidden group-first/item:block absolute size-[15px] fill-black/10 -top-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="absolute size-[15px] fill-black/10 -top-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-first/item:group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><a
-                                        class="flex items-center px-4 py-3 text-base font-medium text-white _text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
-                                        data-headlessui-state="" href="/instalaciones">Instalaciones</a></div>
-                                <div class="relative flex group/item relative"><svg viewBox="0 0 15 15"
-                                        aria-hidden="true"
-                                        class="hidden group-first/item:block absolute size-[15px] fill-black/10 -top-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="absolute size-[15px] fill-black/10 -top-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-first/item:group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -left-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                        class="hidden group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -right-2">
-                                        <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                    </svg><a
-                                        class="flex items-center px-4 py-3 text-base font-medium text-white _text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
-                                        data-headlessui-state="" href="/contacto">Contacto</a></div>
-                            </nav>
-                            <button
-                                class="flex size-12 items-center justify-center self-center rounded-lg data-hover:bg-black/5 lg:hidden"
-                                aria-label="Open main menu" id="headlessui-disclosure-button-:Rsm6fkq:" type="button"
-                                aria-expanded="false" data-headlessui-state=""><svg
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                    aria-hidden="true" data-slot="icon" class="size-6">
-                                    <path fill-rule="evenodd"
-                                        d="M3 9a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 9Zm0 6.75a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                                        clip-rule="evenodd"></path>
-                                </svg></button>
-                        </div>
-                    </div>
-                </header>
+    {{-- <section class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply"> --}}
+    <section
+        class="bg-center bg-no-repeat bg-cover relative overflow-hidden _bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-white bg-blend-multiply p-3 md:px-6 lg:px-4">
+        {{-- <x-layouts.app.bg class="absolute top-0 w-full z-0" /> --}}
 
-                <div class="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+        <div class="px-4 mx-auto max-w-screen-xl py-24 lg:py-56">
+            {{-- <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+                Tecnología inteligente para un mundo en evolución
+            </h1>
+            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                Conectamos innovación, ingeniería y experiencia para transformar tu entorno tecnológico
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="#"
+                    class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    <span class="uppercase">Contactanos</span>
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+                <a href="#"
+                    class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                    Learn more
+                </a>
+            </div> --}}
+
+            <div class="mx-auto max-w-2xl lg:max-w-none">
+                <div class="max-w-3xl slideInUp scrollanimation animated fadeInUp" data-aos="fade-up">
                     <h1
-                        class="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-white sm:text-8xl/[0.8] md:text-7xl/[0.8]">
-                        Servicios de Staffing
-                    </h1>
-                    <p class="mt-8 max-w-lg text-xl font-medium text-white/75 sm:text-3xl">
-                        Talento como Servicio
-                    </p>
-                    <div class="mt-8 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-                        <a class="inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)] border border-transparent bg-[#333] shadow-md text-base font-medium whitespace-nowrap text-white data-disabled:bg-gray-950 data-disabled:opacity-40 data-hover:bg-gray-800"
-                            data-headlessui-state="" href="/contacto">
-                            Contacto
-                        </a>
-                    </div>
+                        class="font-display text-5xl font-medium tracking-tight text-balance text-primary-800 sm:text-7xl">
+                        Tecnología inteligente para un mundo en evolución.</h1>
+                    <p class="mt-6 text-xl lg:text-3xl text-primary-600">En IT NEXVEL ofrecemos un portafolio completo de
+                        servicios especializados en ingeniería, tecnología y transformación digital.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Icon Blocks -->
+    <div class="max-w-screen-xl px-3 md:px-6 lg:px-4 mx-auto lg:my-32 flex flex-col space-y-24">
+        <x-layouts.title-section title="Nuestros servicios"
+            description="En IT NEXVEL ofrecemos un portafolio completo de servicios especializados en ingeniería, tecnología y transformación digital." />
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
+            <x-card-service title="Infraestructura tecnológica"
+                description="Diseño, gestión e implementación de redes informáticas y telecomunicaciones.">
+                <x-slot name="icon">
+                    <x-icons.infrastructure class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Computación en la nube y ciberseguridad"
+                description="Migración, seguridad y administración de servicios en la nube.">
+                <x-slot name="icon">
+                    <x-icons.cloud class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Desarrollo y presencia digital"
+                description="Desarrollo de sistemas de información y aplicaciones web y móviles.">
+                <x-slot name="icon">
+                    <x-icons.code class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Energías renovables"
+                description="Diseño, instalación y mantenimiento de sistemas energéticos sostenibles.">
+                <x-slot name="icon">
+                    <x-icons.energies class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Consultoría y soporte técnico"
+                description="Asesoría y soporte técnico en proyectos tecnológicos y transformación digital.">
+                <x-slot name="icon">
+                    <x-icons.support class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Capacitación especializada"
+                description="Cursos y talleres en redes, servidores, ciberseguridad y más.">
+                <x-slot name="icon">
+                    <x-icons.training class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Comercialización de tecnología"
+                description="Venta y distribución de equipos informáticos, electrónicos y de telecomunicaciones.">
+                <x-slot name="icon">
+                    <x-icons.commercialization class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+            <x-card-service title="Outsourcing tecnológico"
+                description="Externalización de talento humano especializado en tecnologías de la información.">
+                <x-slot name="icon">
+                    <x-icons.outsourcing class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                </x-slot>
+            </x-card-service>
+        </div>
+    </div>
+    <!-- End Icon Blocks -->
+
+    <div class="bg-gradient-to-r from-primary-500 via-primary-600 to-secondary-500 py-20 px-6 max-w-full px-4 py-10 sm:px-6 lg:px-8 lg:my-32 mx-auto">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-6 uppercase">Lorem ipsum</h2>
+            <p class="text-lg text-white mb-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur rem accusantium eos sapiente? Aliquam laboriosam numquam modi vero nesciunt fugit maxime assumenda, ullam debitis totam animi atque, quod molestias sapiente.</p>
+            <a href="{{ route('about') }}" class="bg-white text-primary-500 hover:bg-primary-500 hover:text-white py-3 px-8 text-lg font-medium transition duration-300 hover:shadow-lg uppercase">
+                Conocenos
+            </a>
         </div>
     </div>
 
-    <main class="isolate">
-        <!-- Hero section -->
-        <div class="relative isolate -z-10">
-            {{-- <svg class="absolute inset-x-0 top-0 -z-10 h-256 w-full mask-[radial-gradient(32rem_32rem_at_center,white,transparent)] stroke-gray-200" aria-hidden="true">
-            <defs>
-                <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-                <path d="M.5 200V.5H200" fill="none"></path>
-                </pattern>
-            </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-                <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0"></path>
-            </svg>
-            <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"></rect>
-            </svg> --}}
-            <div class="absolute top-0 right-0 left-1/2 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48" aria-hidden="true">
-            <div class="aspect-801/1036 w-200.25 bg-linear-to-tr from-[#6d8a96] to-[#42575F] opacity-30" style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)"></div>
-            </div>
-            <div class="overflow-hidden">
-            <div class="mx-auto max-w-7xl px-6 pt-36 pb-32 sm:pt-60 lg:px-8 lg:pt-32">
-                <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
-                    <div class="relative">
-                        
-                        <div aria-hidden="true" class="absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2">
-                            <div class="absolute inset-x-0 top-0 border-t border-black/5"></div>
-                            <div class="absolute inset-x-0 top-2 border-t border-black/5"></div>
-                            <div
-                                class="absolute inset-x-0 bottom-0 hidden border-b border-black/5 group-last/row:block">
-                            </div>
-                            <div
-                                class="absolute inset-x-0 bottom-2 hidden border-b border-black/5 group-last/row:block">
-                            </div>
-                        </div>
-                        <div class="relative flex gap-6">
-                            <div class="py-3 group/item relative">
-                                <svg viewBox="0 0 15 15" aria-hidden="true"
-                                    class="hidden group-first/item:block absolute size-[15px] fill-black/10 -top-2 -left-2">
-                                    <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                    class="absolute size-[15px] fill-black/10 -top-2 -right-2">
-                                    <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                    class="hidden group-first/item:group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -left-2">
-                                    <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                    class="hidden group-last/row:block absolute size-[15px] fill-black/10 -bottom-2 -right-2">
-                                    <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                </svg>
-                                <h1 class="text-5xl font-semibold tracking-tight text-pretty text-[#4C636B] sm:text-5xl">Somos Interside Holding: todas las soluciones en un solo lugar</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="mt-4 text-lg font-medium text-pretty text-[#4C636B] sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                    Nuestro holding de tres empresas contempla las áreas de Ingeniería y Servicios especializados en soluciones TIC, Energía, DataCenter, Desarrollo de Software a medida y Mensajería Masiva. Todo en un solo lugar para ofrecer soluciones a la medida de tu empresa. 
-                    </p>
-                    <p class="mt-4 text-lg font-medium text-pretty text-[#4C636B] sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                    Llegamos a lugares donde otros no llegan gracias a que contamos con un experimentado grupo humano capaz de proveer soluciones de todo tipo a tu empresa. Mientras trabajamos día y noche por ayudarte a crecer con seguridad. 
-                    </p>    
-                <p class="mt-4 text-lg font-medium text-pretty text-[#4C636B] sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                    Nuestra elevada calidad de servicio te proporciona considerables beneficios en cuanto a productividad, motivación, capacitación, lealtad y compromiso; integrando las mejores soluciones del mercado en base a tus requerimientos, para agregar valor a los procesos de su empresa.
-                </p>
-                </div>
-                <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                    <div class="ml-auto w-full flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-0">
-                        <div class="relative">
-                            <img src="https://www.interside.cl/wp-content/uploads/2020/02/ilya-pavlov-OqtafYT5kTw-unsplash-1024x683.jpg" alt="" class="aspect-2/2 w-full rounded bg-gray-900/5 object-cover shadow-lg">
-                            <div class="pointer-events-none absolute inset-0 rounded ring-1 ring-gray-900/10 ring-inset"></div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
+    <!-- Features -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:my-32 mx-auto">
+        <!-- Title -->
+        <div class="mx-auto max-w-2xl mb-8 lg:mb-14 text-center animate__animated animate__fadeIn" data-aos="fade-up">
+            <h2 class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-neutral-200">
+                Nuestra propuesta de valor
+            </h2>
+            <p class="mt-3 text-gray-800 dark:text-neutral-200 animate__animated animate__fadeIn">
+                En IT NEXVEL, creemos en la transformación digital como una herramienta clave para impulsar el
+                crecimiento y la competitividad de las empresas. Ofrecemos una gama completa de servicios tecnológicos
+                que van desde la infraestructura tecnológica hasta la innovación y la ciberseguridad, pasando por el
+                desarrollo de software y la presencia digital.
+            </p>
         </div>
-    </main>
+        <!-- End Title -->
 
-    <div class="relative bg-[#4C636B] overflow-hidden">
-        <div class="relative h-80 overflow-hidden bg-[#333] md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2 z-[10]">
-          {{-- <img class="size-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply" alt="" /> --}}
-          <svg viewBox="0 0 926 676" aria-hidden="true" class="absolute -bottom-24 left-24 w-[57.875rem] transform-gpu blur-[118px]">
-            <path fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)" fill-opacity=".4" d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z" />
-            <defs>
-              <linearGradient id="60c3c621-93e0-4a09-a0e6-4c228a0116d8" x1="926.392" x2="-109.635" y1=".176" y2="321.024" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#637D87" />
-                <stop offset="1" stop-color="#637D87" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
-          <div class="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-            <div class="relative">
-                <div aria-hidden="true" class="absolute inset-y-0 left-1/2 z-1 w-screen -translate-x-1/2">
-                    <div class="absolute inset-x-0 top-0 border-t border-white/20"></div>
-                    <div class="absolute inset-x-0 top-2 border-t border-white/20"></div>
-                    <div
-                        class="absolute inset-x-0 bottom-0 border-b border-white/20 group-last/row:block">
-                    </div>
-                    <div
-                        class="absolute inset-x-0 bottom-2 border-b border-white/20 group-last/row:block">
-                    </div>
-                </div>
-                <div class="relative flex gap-6">
-                    <div class="py-3 group/item relative">
-                        <svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="hidden group-first/item:block absolute size-[15px] fill-white/20 -top-2 -left-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="absolute size-[15px] fill-white/20 -top-2 -right-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="group-first/item:group-last/row:block absolute size-[15px] fill-white/20 -bottom-2 -left-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="group-last/row:block absolute size-[15px] fill-white/20 -bottom-2 -right-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg>
-                        <h2 class="text-4xl font-semibold text-white">Somos Interside Instalaciones</h2>
-                    </div>
-                </div>
-                
-            </div>
-            <p class="mt-6 text-base/7 text-gray-300">El Holding también cuenta con un área de Telecomunicaciones, Energía, Datacenter y Cableado, desarrollando de manera integral procesos de ingeniería de primer nivel en estas líneas de negocios, aplicando las políticas de calidad y experiencia de nuestro Holding a tus necesidades en esta área.</p>
-            <p class="mt-6 text-base/7 text-gray-300">Ponemos a nuestra disposición no solo a nuestro amplio y experimentado equipo de trabajo. También la seguridad de nuestros centros de datos seguros y eficientes; dado que entendemos de conectividad y ayudamos a su desarrollo tecnológico generando vínculos de confianza.</p>
-            <div class="mt-8">
-              <a href="#" class="inline-flex rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#4C636B]  shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">¡Contactanos!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="relative bg-[#637D87] overflow-hidden">
-        <div class="relative h-80 overflow-hidden bg-[#333] md:absolute md:right-0 md:h-full md:w-1/3 lg:w-1/2 z-1">
-          {{-- <img class="size-full object-cover" src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply" alt="" /> --}}
-          <svg viewBox="0 0 926 676" aria-hidden="true" class="absolute -bottom-24 right-24 w-[57.875rem] transform-gpu blur-[118px]">
-            <path fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)" fill-opacity=".4" d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z" />
-            <defs>
-              <linearGradient id="60c3c621-93e0-4a09-a0e6-4c228a0116d8" x1="926.392" x2="-109.635" y1=".176" y2="321.024" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#637D87" />
-                <stop offset="1" stop-color="#637D87" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
-          <div class="pl-6 pr-6 md:mr-auto md:w-2/3 md:pr-16 lg:w-1/2 lg:pr-24 lg:pl-0 xl:pr-32">
-            <div class="relative">
-                <div aria-hidden="true" class="absolute inset-y-0 left-1/2 w-screen -translate-x-1/2">
-                    <div class="absolute inset-x-0 top-0 border-t border-white/20"></div>
-                    <div class="absolute inset-x-0 top-2 border-t border-white/20"></div>
-                    <div class="absolute inset-x-0 bottom-0 border-b border-white/20 group-last/row:block">
-                    </div>
-                    <div class="absolute inset-x-0 bottom-2 border-b border-white/20 group-last/row:block">
-                    </div>
-                </div>
-
-                <div class="relative flex gap-6">
-                    <div class="py-3 group/item relative">
-                        <svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="hidden group-first/item:block absolute size-[15px] fill-white/20 -top-2 -left-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="absolute size-[15px] fill-white/20 -top-2 -right-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="group-first/item:group-last/row:block absolute size-[15px] fill-white/20 -bottom-2 -left-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                            class="group-last/row:block absolute size-[15px] fill-white/20 -bottom-2 -right-2">
-                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                        </svg>
-                        <h2 class="text-4xl font-semibold text-white">Somos Interside Soluciones y Servicios</h2>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-6 text-base/7 text-white">Nuestro Holding cuenta con un área de Soluciones y Servicios que ofrece Soluciones de Seguridad; Comunicaciones Unificadas; Soluciones de Redes e Infraestructura; Monitoreo y Administración 7×24 y Capacitaciones y Asesoría.</p>
-            <p class="mt-6 text-base/7 text-white">Contamos además con un potente grupo de ingenieros y técnicos especializados en las distintas tecnologías que ofrecemos en este sector.</p>
-            <p class="mt-6 text-base/7 text-white">Brindamos servicios y proyectos a nivel multimarca. La experiencia de todo nuestro grupo hace que esta área de Soluciones y Servicio sea la mejor opción para proyectos de mediana y gran envergadura para tu empresa.</p>
-            <div class="mt-8">
-              <a href="#" class="inline-flex rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#4C636B] shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">¡Conócenos!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-        <div class="overflow-hidden">
-            <div class="relative isolate bg-neutral-50 py-16 sm:py-28 md:py-32">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div class="mx-auto max-w-2xl lg:max-w-none">
-                        <div style="opacity: 1; transform: none;">
-                            <figure class="mx-auto max-w-4xl relative">
-                                <div aria-hidden="true" class="absolute inset-y-0 left-1/2 w-screen -translate-x-1/2">
-                                    <div class="absolute inset-x-0 top-0 border-t border-black/20"></div>
-                                    <div class="absolute inset-x-0 top-2 border-t border-black/20"></div>
-                                    <div class="absolute inset-x-0 bottom-0 border-b border-black/20 group-last/row:block">
-                                    </div>
-                                    <div class="absolute inset-x-0 bottom-2 border-b border-black/20 group-last/row:block">
-                                    </div>
-                                </div>
-                
-                                <div class="relative flex gap-6">
-                                    <div class="py-3 group/item relative">
-                                        <svg viewBox="0 0 15 15" aria-hidden="true"
-                                            class="hidden group-first/item:block absolute size-[15px] fill-black/20 -top-2 -left-2">
-                                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                            class="absolute size-[15px] fill-black/20 -top-2 -right-2">
-                                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                            class="group-first/item:group-last/row:block absolute size-[15px] fill-black/20 -bottom-2 -left-2">
-                                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                        </svg><svg viewBox="0 0 15 15" aria-hidden="true"
-                                            class="group-last/row:block absolute size-[15px] fill-black/20 -bottom-2 -right-2">
-                                            <path d="M8 0H7V7H0V8H7V15H8V8H15V7H8V0Z"></path>
-                                        </svg>
-                                        <div class="relative font-display text-3xl font-medium tracking-tight text-[#3A3E40] sm:text-4xl">
-
-                                            <p
-                                            class="before:content-['“'] after:content-['”'] sm:before:absolute sm:before:right-full">
-                                            El principal activo con el cual cuenta Interside Holding es el potente equipo de trabajo con el que desarrollamos soluciones de alta gama a un extenso grupo de clientes con los que hemos trabajado por años.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="bg-[#314750]">
-            <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-                <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
-                    <a href="#" class="text-gray-100 hover:text-white">Nuestros Servicios</a>
-                    <a href="#" class="text-gray-100 hover:text-white">Nosotros</a>
-                    <a href="#" class="text-gray-100 hover:text-white">Contacto</a>
-                    <a href="#" class="text-gray-100 hover:text-white">Política de Privacidad</a>
-                    <a href="#" class="text-gray-100 hover:text-white">Terminos y Condiciones</a>
-                </nav>
-                <div class="mt-16 flex justify-center gap-x-10">
-                    <a href="#" class="text-gray-100 hover:text-white">
-                        <span class="sr-only">Facebook</span>
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-100 hover:text-white">
-                        <span class="sr-only">Instagram</span>
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-100 hover:text-white">
-                        <span class="sr-only">X</span>
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <!-- Grid -->
+        <div class="mx-auto max-w-screen-xl grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+            <!-- Icon Block -->
+            <div class="text-center group" data-aos="fade-up">
+                <div
+                    class="relative w-fit mx-auto group-hover:scale-120 group-hover:translate-x-0 group-hover:translate-y-0 transition ease-in-out">
+                    <span
+                        class="absolute w-12 inset-0 bg-secondary-400/40 rounded-l-xl rounded-r-lg z-0 -top-2 -right-2"></span>
+                    <span class="absolute w-12 inset-0 bg-secondary-400/50 rounded-xl z-0 top-2 left-2"></span>
+                    <div class="z-10 relative">
+                        <svg class="shrink-0 size-7 lg:size-14 md:size-9 mx-auto text-gray-700 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path
-                                d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+                                d="M11.445 20.913a1.665 1.665 0 0 1 -1.12 -1.23a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.31 .318 1.643 1.79 .997 2.694">
+                            </path>
+                            <path d="M15 19l2 2l4 -4"></path>
+                            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
                         </svg>
-                    </a>
-                    <a href="#" class="text-gray-100 hover:text-white">
-                        <span class="sr-only">GitHub</span>
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-100 hover:text-white">
-                        <span class="sr-only">YouTube</span>
-                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
+                    </div>
                 </div>
-                <p class="mt-10 text-center text-sm/6 text-gray-100">&copy; 2025 IT Nexvel, Inc. All rights
-                    reserved.</p>
+
+                <div class="mt-2 sm:mt-6">
+                    <h3 class="sm:text-lg font-semibold text-gray-600">
+                        Soluciones personalizadas y escalables
+                    </h3>
+                </div>
             </div>
-        </footer>
+            <!-- End Icon Block -->
+
+            <!-- Icon Block -->
+            <div class="text-center group" data-aos="fade-up">
+                <div
+                    class="relative w-fit mx-auto group-hover:scale-120 group-hover:translate-x-0 group-hover:translate-y-0 transition ease-in-out">
+                    <span
+                        class="absolute w-12 inset-0 bg-secondary-400/40 rounded-l-xl rounded-r-lg z-0 -top-2 -right-2"></span>
+                    <span class="absolute w-12 inset-0 bg-secondary-400/50 rounded-xl z-0 top-2 left-2"></span>
+                    <div class="z-10 relative">
+                        <svg class="shrink-0 size-7 lg:size-14 md:size-9 mx-auto text-gray-700 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M28.3196 15.91L27.7096 15.29L27.4596 15.05C27.7815 14.0636 27.9633 13.0369 27.9996 12C27.9996 9.87827 27.1567 7.84344 25.6564 6.34315C24.1561 4.84286 22.1213 4 19.9996 4H16.3196C15.9054 3.99974 15.4972 4.09921 15.1296 4.29C14.6819 4.18069 14.2276 4.10052 13.7696 4.05C13.5396 4.05 13.3596 4.05 13.2196 4.05H12.9996C10.8778 4.05 8.843 4.89286 7.34271 6.39315C5.84242 7.89344 4.99957 9.92827 4.99957 12.05V14.15L3.80957 15.3C3.42763 15.6865 3.16827 16.1771 3.06399 16.7104C2.95972 17.2436 3.01517 17.7958 3.2234 18.2977C3.43163 18.7996 3.78337 19.2289 4.23453 19.5317C4.6857 19.8345 5.21621 19.9974 5.75957 20C5.87601 20.0102 5.99312 20.0102 6.10957 20C6.23414 20.463 6.47512 20.8864 6.80957 21.23C7.27174 21.6791 7.87695 21.9516 8.51957 22C8.57506 22.6448 8.85456 23.2498 9.30957 23.71C9.76566 24.1694 10.3736 24.4467 11.0196 24.49C11.0673 25.1348 11.3439 25.7413 11.7996 26.2C12.2796 26.6835 12.9225 26.9709 13.6029 27.006C14.2833 27.0411 14.9523 26.8215 15.4796 26.39L16.2996 27.2C16.5551 27.457 16.859 27.6609 17.1936 27.8001C17.5283 27.9393 17.8871 28.0109 18.2496 28.0109C18.612 28.0109 18.9709 27.9393 19.3055 27.8001C19.6402 27.6609 19.944 27.457 20.1996 27.2C20.6686 26.7445 20.9533 26.1322 20.9996 25.48C21.6455 25.4367 22.2535 25.1594 22.7096 24.7C23.1551 24.2395 23.4273 23.6387 23.4796 23C24.1244 22.9445 24.7294 22.665 25.1896 22.21C25.555 21.8455 25.8084 21.384 25.9196 20.88C26.3546 20.9555 26.8015 20.9219 27.2203 20.7823C27.6392 20.6427 28.0169 20.4014 28.3196 20.08C28.5944 19.8068 28.8125 19.4819 28.9613 19.1241C29.1102 18.7663 29.1868 18.3825 29.1868 17.995C29.1868 17.6075 29.1102 17.2237 28.9613 16.8659C28.8125 16.5081 28.5944 16.1832 28.3196 15.91V15.91ZM16.3196 6H19.9996C21.5909 6 23.117 6.63214 24.2422 7.75736C25.3674 8.88258 25.9996 10.4087 25.9996 12C25.982 12.4745 25.9218 12.9464 25.8196 13.41L21.7096 9.29C21.6161 9.19732 21.5053 9.12399 21.3835 9.07423C21.2616 9.02447 21.1312 8.99924 20.9996 9H16.5196C16.2952 8.99846 16.0768 9.07243 15.8996 9.21V9.21L13.8996 10.74C13.6459 10.9128 13.3361 10.9827 13.0329 10.9357C12.7297 10.8886 12.4556 10.7281 12.2662 10.4866C12.0769 10.2452 11.9863 9.94075 12.0129 9.63503C12.0395 9.32931 12.1813 9.04513 12.4096 8.84L15.8596 6.14C15.9898 6.03715 16.1541 5.98717 16.3196 6V6ZM5.21957 17.79C5.08022 17.6448 5.00242 17.4513 5.00242 17.25C5.00242 17.0487 5.08022 16.8552 5.21957 16.71L6.70957 15.22C6.78033 15.1491 6.86457 15.0932 6.95731 15.0554C7.05006 15.0176 7.14943 14.9988 7.24957 15C7.34819 14.999 7.446 15.0179 7.53709 15.0557C7.62818 15.0936 7.71067 15.1494 7.77957 15.22C7.85092 15.2907 7.90756 15.3748 7.94622 15.4675C7.98487 15.5601 8.00478 15.6596 8.00478 15.76C8.00478 15.8604 7.98487 15.9599 7.94622 16.0525C7.90756 16.1452 7.85092 16.2293 7.77957 16.3L6.29957 17.79C6.15209 17.9249 5.95945 17.9997 5.75957 17.9997C5.55968 17.9997 5.36704 17.9249 5.21957 17.79V17.79ZM7.99957 19.25C7.99923 19.1506 8.01949 19.0521 8.05907 18.9609C8.09866 18.8697 8.15671 18.7877 8.22957 18.72L9.70957 17.23C9.78066 17.1596 9.86496 17.1039 9.95763 17.0662C10.0503 17.0284 10.1495 17.0093 10.2496 17.01C10.3986 17.0109 10.5441 17.0556 10.6679 17.1386C10.7917 17.2215 10.8884 17.339 10.9459 17.4765C11.0035 17.614 11.0193 17.7654 10.9915 17.9118C10.9637 18.0582 10.8935 18.1932 10.7896 18.3L9.29957 19.79C9.156 19.9287 8.96419 20.0062 8.76457 20.0062C8.56495 20.0062 8.37313 19.9287 8.22957 19.79C8.15595 19.7208 8.0975 19.6371 8.0579 19.5441C8.01831 19.4512 7.99845 19.351 7.99957 19.25V19.25ZM10.7196 21.25L12.2096 19.76C12.2803 19.6891 12.3646 19.6332 12.4573 19.5954C12.5501 19.5576 12.6494 19.5388 12.7496 19.54C12.8482 19.539 12.946 19.5579 13.0371 19.5957C13.1282 19.6336 13.2107 19.6894 13.2796 19.76C13.3509 19.8307 13.4076 19.9148 13.4462 20.0075C13.4849 20.1001 13.5048 20.1996 13.5048 20.3C13.5048 20.4004 13.4849 20.4999 13.4462 20.5925C13.4076 20.6852 13.3509 20.7693 13.2796 20.84L11.7996 22.29C11.6564 22.4332 11.4621 22.5137 11.2596 22.5137C11.057 22.5137 10.8628 22.4332 10.7196 22.29C10.5763 22.1468 10.4959 21.9525 10.4959 21.75C10.4959 21.5475 10.5763 21.3532 10.7196 21.21V21.25ZM13.2196 24.82C13.1482 24.7493 13.0916 24.6652 13.0529 24.5725C13.0143 24.4799 12.9944 24.3804 12.9944 24.28C12.9944 24.1796 13.0143 24.0801 13.0529 23.9875C13.0916 23.8948 13.1482 23.8107 13.2196 23.74L14.6996 22.26C14.8428 22.116 15.0365 22.0334 15.2396 22.03C15.3403 22.0306 15.44 22.0513 15.5327 22.0908C15.6254 22.1303 15.7093 22.1878 15.7796 22.26C15.9183 22.4036 15.9958 22.5954 15.9958 22.795C15.9958 22.9946 15.9183 23.1864 15.7796 23.33L14.2896 24.82C14.1409 24.9535 13.9461 25.0239 13.7465 25.0164C13.5468 25.009 13.3579 24.9242 13.2196 24.78V24.82ZM26.2196 18.94C25.845 18.8391 25.5013 18.6467 25.2196 18.38V18.33L23.2196 16.33C23.0313 16.1417 22.7759 16.0359 22.5096 16.0359C22.2433 16.0359 21.9879 16.1417 21.7996 16.33C21.6113 16.5183 21.5055 16.7737 21.5055 17.04C21.5055 17.3063 21.6113 17.5617 21.7996 17.75L23.7996 19.75C23.9201 19.8958 23.9819 20.0812 23.973 20.2702C23.964 20.4591 23.885 20.6379 23.7512 20.7717C23.6175 20.9054 23.4387 20.9845 23.2497 20.9934C23.0608 21.0023 22.8753 20.9405 22.7296 20.82C22.6366 20.7263 22.526 20.6519 22.4041 20.6011C22.2823 20.5503 22.1516 20.5242 22.0196 20.5242C21.8876 20.5242 21.7568 20.5503 21.635 20.6011C21.5131 20.6519 21.4025 20.7263 21.3096 20.82C21.1233 21.0074 21.0188 21.2608 21.0188 21.525C21.0188 21.7892 21.1233 22.0426 21.3096 22.23C21.3806 22.2998 21.4371 22.3831 21.4756 22.4749C21.5141 22.5668 21.5339 22.6654 21.5339 22.765C21.5339 22.8646 21.5141 22.9632 21.4756 23.0551C21.4371 23.1469 21.3806 23.2302 21.3096 23.3C21.2389 23.3714 21.1548 23.428 21.0621 23.4667C20.9694 23.5053 20.87 23.5252 20.7696 23.5252C20.6691 23.5252 20.5697 23.5053 20.477 23.4667C20.3843 23.428 20.3002 23.3714 20.2296 23.3C20.0422 23.1137 19.7888 23.0092 19.5246 23.0092C19.2604 23.0092 19.0069 23.1137 18.8196 23.3V23.3C18.6333 23.4874 18.5288 23.7408 18.5288 24.005C18.5288 24.2692 18.6333 24.5226 18.8196 24.71C18.9628 24.8519 19.0438 25.0449 19.0447 25.2465C19.0456 25.4481 18.9665 25.6418 18.8246 25.785C18.6827 25.9282 18.4897 26.0092 18.2881 26.0101C18.0865 26.0111 17.8928 25.9319 17.7496 25.79L16.9496 24.99L17.2296 24.72C17.4869 24.4636 17.691 24.1589 17.8303 23.8234C17.9696 23.4879 18.0413 23.1283 18.0413 22.765C18.0413 22.4017 17.9696 22.0421 17.8303 21.7066C17.691 21.3711 17.4869 21.0664 17.2296 20.81C16.7653 20.3346 16.1425 20.0463 15.4796 20C15.4319 19.3552 15.1552 18.7487 14.6996 18.29V18.29C14.239 17.8444 13.6382 17.5723 12.9996 17.52C12.9441 16.8752 12.6646 16.2702 12.2096 15.81C11.9137 15.5051 11.551 15.2733 11.1501 15.1327C10.7491 14.9921 10.321 14.9467 9.89957 15C9.73566 14.3747 9.35284 13.8289 8.82067 13.4619C8.28851 13.0949 7.64232 12.931 6.99957 13V12C6.99894 10.4377 7.60769 8.93681 8.6964 7.81635C9.78511 6.69589 11.2679 6.04426 12.8296 6L11.2296 7.25C10.5737 7.77889 10.1521 8.54445 10.0556 9.38148C9.95924 10.2185 10.1958 11.0599 10.7143 11.724C11.2327 12.3882 11.9915 12.8219 12.8269 12.9315C13.6623 13.0411 14.5073 12.8179 15.1796 12.31L16.8596 11H20.5896L24.5296 15L26.8996 17.36C27.0654 17.5438 27.1572 17.7825 27.1572 18.03C27.1572 18.2775 27.0654 18.5163 26.8996 18.7C26.8131 18.7953 26.7018 18.8645 26.5781 18.8998C26.4544 18.9352 26.3233 18.9352 26.1996 18.9L26.2196 18.94Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-2 sm:mt-6">
+                    <h3 class="sm:text-lg font-semibold text-gray-600">
+                        Acompañamiento técnico y estratégico
+                    </h3>
+                </div>
+            </div>
+            <!-- End Icon Block -->
+
+            <!-- Icon Block -->
+            <div class="text-center group" data-aos="fade-up">
+                <div
+                    class="relative w-fit mx-auto group-hover:scale-120 group-hover:translate-x-0 group-hover:translate-y-0 transition ease-in-out">
+                    <span
+                        class="absolute w-12 inset-0 bg-secondary-400/40 rounded-l-xl rounded-r-lg z-0 -top-2 -right-2"></span>
+                    <span class="absolute w-12 inset-0 bg-secondary-400/50 rounded-xl z-0 top-2 left-2"></span>
+                    <div class="z-10 relative">
+                        <svg class="shrink-0 size-7 lg:size-14 md:size-9 mx-auto text-gray-700 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12h1m-3.5-6.5 1-1M12 3V2M5.5 5.5l-1-1M3 12H2m8 10h4m3-10a5 5 0 1 0-7 4.584V19h4v-2.416A5.001 5.001 0 0 0 17 12z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-2 sm:mt-6">
+                    <h3 class="sm:text-lg font-semibold text-gray-600">
+                        Compromiso con la innovación sostenible
+                    </h3>
+                </div>
+            </div>
+            <!-- End Icon Block -->
+
+
+            <!-- Icon Block -->
+            <div class="text-center group" data-aos="fade-up">
+                <div
+                    class="relative w-fit mx-auto group-hover:scale-120 group-hover:translate-x-0 group-hover:translate-y-0 transition ease-in-out">
+                    <span
+                        class="absolute w-12 inset-0 bg-secondary-400/40 rounded-l-xl rounded-r-lg z-0 -top-2 -right-2"></span>
+                    <span class="absolute w-12 inset-0 bg-secondary-400/50 rounded-xl z-0 top-2 left-2"></span>
+                    <div class="z-10 relative">
+                        <svg class="shrink-0 size-7 lg:size-14 md:size-9 mx-auto text-gray-700 dark:text-neutral-200"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1" viewBox="0 0 36 36" preserveAspectRatio="xMidYMid meet"
+                            fill="currentColor">
+                            <title>network-globe-outline-badged</title>
+                            <path d="M26.58,32h-18a1,1,0,1,0,0,2h18a1,1,0,0,0,0-2Z"
+                                class="clr-i-outline--badged clr-i-outline-path-1--badged"></path>
+                            <path
+                                d="M31.5,13.35a7.54,7.54,0,0,1-1.5.15l-.51,0a11.91,11.91,0,0,1-.25,6,16,16,0,0,1-5-.41,2.33,2.33,0,0,0-.33-1.19,18.59,18.59,0,0,0,2.78-5.18,7.49,7.49,0,0,1-1.31-.82,17,17,0,0,1-2.61,5,2.28,2.28,0,0,0-2.58.57c-.35-.2-.7-.4-1-.63a16,16,0,0,1-4.93-5.23,2.25,2.25,0,0,0,.47-1.77,17,17,0,0,1,8.53-.62,7.43,7.43,0,0,1-.56-1.59A18.56,18.56,0,0,0,14,8.53a2.33,2.33,0,0,0-1.14-.61l-.25,0c-.12-.42-.23-.84-.32-1.27s-.14-.81-.19-1.22A11.92,11.92,0,0,1,22.57,5a7.45,7.45,0,0,1,.53-2A14,14,0,0,0,3.75,16c0,.45,0,.89.07,1.33l0,0h0a14,14,0,1,0,27.68-4ZM10.76,6.27c0,.21.06.43.1.64.09.44.21.87.33,1.3a2.28,2.28,0,0,0-1.1,2.25A18.32,18.32,0,0,0,5.9,14.22,12,12,0,0,1,10.76,6.27Zm0,15.71A2.34,2.34,0,0,0,9.2,23.74l-.64,0A11.94,11.94,0,0,1,5.8,16.92l.11-.19a16.9,16.9,0,0,1,4.81-4.89,2.31,2.31,0,0,0,2.28.63,17.53,17.53,0,0,0,5.35,5.65c.41.27.83.52,1.25.76A2.32,2.32,0,0,0,19.78,20a16.94,16.94,0,0,1-6.2,3.11A2.34,2.34,0,0,0,10.76,22Zm7,6a11.92,11.92,0,0,1-5.81-1.51l.28-.06a2.34,2.34,0,0,0,1.57-1.79,18.43,18.43,0,0,0,7-3.5,2.29,2.29,0,0,0,3-.62,17.41,17.41,0,0,0,4.32.56l.53,0A12,12,0,0,1,17.75,28Z"
+                                class="clr-i-outline--badged clr-i-outline-path-2--badged"></path>
+                            <circle cx="30" cy="6" r="5"
+                                class="clr-i-outline--badged clr-i-outline-path-3--badged clr-i-badge"></circle>
+                            <rect x="0" y="0" width="36" height="36" fill-opacity="0"></rect>
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-2 sm:mt-6">
+                    <h3 class="sm:text-lg font-semibold text-gray-600">
+                        Un solo aliado para todas tus necesidades tecnológicas
+                    </h3>
+                </div>
+            </div>
+            <!-- End Icon Block -->
+        </div>
+        <!-- End Grid -->
+    </div>
+
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:my-32 mx-auto text-center">
+        <hgroup>
+            <h2
+                class="text-xs/5 font-semibold text-gray-500 uppercase data-dark:text-gray-400">
+                ¿Necesitas una solución tecnológica?
+            </h2>
+            <p class="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-3xl">En IT NEXVEL estamos listos para ayudarte.</p>
+        </hgroup>
+        <p class="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">Contáctanos para discutir tus necesidades.</p>
+        <div class="mt-6">
+            <a
+                href="{{ route('contact') }}"
+                class="btn-11 relative px-3 py-2 uppercase bg-secondary-500">
+                Contactanos
+            </a>
+        </div>
+    </div>
+    <!-- End Features -->
 </x-layouts.guest>

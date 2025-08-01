@@ -3,9 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
-Route::get('/', function () {
-    return view('pages.home');
-})->name('home');
+Route::view('/', 'pages.home')->name('home');
+Route::view('home2', 'pages.old.home');
+
+Route::view('services', 'pages.services')->name('services');
+
+Route::view('contact', 'pages.contact')->name('contact');
+
+Route::view('about', 'pages.about')->name('about');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

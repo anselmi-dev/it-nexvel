@@ -1,5 +1,4 @@
 <div class="flex aspect-square size-8 items-center justify-center rounded-md bg-accent-content text-accent-foreground">
-    {{-- <x-app-logo-icon class="size-5 fill-current text-white dark:text-black" /> --}}
     <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 706.61 95.45">
         <defs>
             <style>
@@ -46,6 +45,3 @@
         </g>
     </svg>
 </div>
-{{-- <div class="ms-1 grid flex-1 text-start text-sm">
-    <span class="mb-0.5 truncate leading-tight font-semibold">Laravel Starter Kit</span>
-</div> --}}
