@@ -14,15 +14,11 @@ export default {
     ],
 
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
-            fontSize: {
-                xxs: '.7rem',
-            },
-        },
         colors: {
+            'app': '#2D5980',
+            'app': {
+                '500': '#2D5980'
+            },
             'color1': {
                 '50': '#f3f7f8',
                 '100': '#e1eaec',
