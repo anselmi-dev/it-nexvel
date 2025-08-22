@@ -20,19 +20,20 @@
     </section>
 
     <!-- About Section -->
-    <section class="py-20 relative bg-white min-h-[calc(100vh-8rem)] flex items-center">
+    <section class="py-20 relative bg-white min-h-[calc(80vh-8rem)] flex items-center">
         <div
             class="mx-auto max-w-7xl w-full px-6 md:px-10 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 items-center">
             <!-- Left with icons and heading -->
-            <div class="relative col-span-5">
-                <img src="{{ asset('images/bombilla-top.svg') }}" alt="Icono superior" class="h-16 w-auto" />
+            <div class="relative col-span-full lg:col-span-5">
+                <img src="{{ asset('images/bombilla-top.svg') }}" alt="Icono superior" class="h-16 lg:h-24 w-auto" />
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-app leading-tight font-century">
-                    En IT NEXVEL transformamos <br /> tecnología en <br /> soluciones reales.
+                    En <img src="{{ asset('images/logo.png') }}" alt="IT NEXVEL" class="inline h-10 md:h-10 lg:h-14 top-[-6px] relative w-auto drop-shadow-sm select-none" />
+                     transformamos <br /> tecnología en <br /> soluciones reales.
                 </h2>
-                <img src="{{ asset('images/bombilla-bottom.svg') }}" alt="Icono inferior" class="h-16 w-auto" />
+                <img src="{{ asset('images/bombilla-bottom.svg') }}" alt="Icono inferior" class="h-16 lg:h-24 w-auto" />
             </div>
             <!-- Right with paragraph text -->
-            <div class="text-app space-y-5 text-base leading-relaxed font-now col-span-7">
+            <div class="text-app space-y-5 text-base leading-relaxed font-now col-span-full lg:col-span-7">
                 <p>
                     Somos una empresa de ingeniería y tecnología dedicada a ofrecer soluciones integrales que
                     conectan
@@ -53,47 +54,47 @@
 
     <!-- Our Services Section -->
     <section class="py-20">
-    <div
-        class="py-10 relative bg-cover bg-center text-white min-h-[calc(100vh-8rem)] flex items-center font-century"
-        style="background-image: url('{{ asset('images/bg-nuestros-servicios.jpg') }}');">
-        {{-- <div class="absolute inset-0 bg-[#0b2d5a]/70"></div> --}}
-        <div class="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12">NUESTROS SERVICIOS</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                <div
-                    class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                    SEO, MARKETING DIGITAL <br /> Y PRESENCIA ONLINE.
-                </div>
-                <div
-                    class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                    INFRAESTRUCTURA TECNOLÓGICA, CLOUD, <br /> REDES Y CIBERSEGURIDAD.
-                </div>
-                <div
-                    class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                    DOMÓTICA, INMÓTICA Y <br /> SEGURIDAD ELECTRÓNICA.
-                </div>
-                <div
-                    class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                    CONSULTORÍA, GESTIÓN <br /> & ADM. DE PROYECTOS.
-                </div>
-                <div
-                    class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                    FORMACIÓN ESPECIALIZADA <br /> Y OUTSOURCING IT.
+        <div
+            class="py-10 relative bg-cover bg-center text-white min-h-[calc(80vh-8rem)] flex items-center font-century"
+            style="background-image: url('{{ asset('images/bg-nuestros-servicios.jpg') }}');">
+            {{-- <div class="absolute inset-0 bg-[#0b2d5a]/70"></div> --}}
+            <div class="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">NUESTROS SERVICIOS</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div
+                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
+                        INFRAESTRUCTURA TECNOLÓGICA, CLOUD, REDES Y CIBERSEGURIDAD.
+                    </div>
+                    <div
+                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
+                        DOMÓTICA, INMÓTICA Y SEGURIDAD ELECTRÓNICA.
+                    </div>
+                    <div
+                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
+                        CONSULTORÍA, GESTIÓN & ADM. DE PROYECTOS.
+                    </div>
+                    <div
+                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
+                        SEO, MARKETING DIGITAL Y PRESENCIA ONLINE.
+                    </div>
+                    <div
+                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
+                        FORMACIÓN ESPECIALIZADA Y OUTSOURCING IT.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- Nuestra propuesta de valor -->
-    <section class="py-20 min-h-[calc(100vh-8rem)] flex items-center">
+    <section class="py-[78px] flex items-center">
         <div
             class="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-                <h2 class="text-5xl leading-[1.05] font-extrabold text-app font-century">
+                <h2 class="text-[43px] leading-[1.05] font-extrabold text-app font-century">
                     Nuestra<br /> propuesta de valor
                 </h2>
-                <p class="mt-10 text-slate-600 text-base leading-relaxed lg:pr-10 font-now">
+                <p class="mt-6 lg:mt-[90px] text-app text-base leading-relaxed lg:pr-10 font-now">
                     En IT NEXVEL, creemos en la transformación digital como una herramienta clave para impulsar el
                     crecimiento y la competitividad de las empresas. Ofrecemos una gama completa de servicios
                     tecnológicos que van desde la infraestructura tecnológica hasta la innovación y la ciberseguridad,
@@ -101,30 +102,32 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-12 text-center font-century">
-                <!-- Item -->
-                <div>
-                    <img src="{{ asset('images/icon-aliado.svg') }}" alt="Un solo aliado" class="mx-auto h-24 w-auto" />
-                    <h3 class="mt-4 font-semibold text-app">Un solo aliado para todas tus<br /> necesidades
-                        tecnológicas</h3>
-                </div>
-                <!-- Item -->
-                <div>
-                    <img src="{{ asset('images/icon-acompanamiento.svg') }}" alt="Acompañamiento"
-                        class="mx-auto h-24 w-auto" />
-                    <h3 class="mt-4 font-semibold text-app">Acompañamiento técnico y<br /> estratégico</h3>
-                </div>
-                <!-- Item -->
-                <div>
-                    <img src="{{ asset('images/icon-compromiso.svg') }}" alt="Compromiso sostenible"
-                        class="mx-auto h-24 w-auto" />
-                    <h3 class="mt-4 font-semibold text-app">Compromiso con la innovación<br /> sostenible</h3>
-                </div>
-                <!-- Item -->
-                <div>
-                    <img src="{{ asset('images/icon-soluciones.svg') }}" alt="Soluciones escalables"
-                        class="mx-auto h-24 w-auto" />
-                    <h3 class="mt-4 font-semibold text-app">Soluciones personalizadas y<br /> escalables</h3>
+            <div class="lg:mt-[90px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-[23px] text-center font-century">
+                    <!-- Item -->
+                    <div>
+                        <img src="{{ asset('images/icon-aliado.svg') }}" alt="Un solo aliado" class="mx-auto h-[90px] w-auto" />
+                        <h3 class="mt-4 font-bold text-app text-[14px]">Un solo aliado para todas tus<br /> necesidades
+                            tecnológicas</h3>
+                    </div>
+                    <!-- Item -->
+                    <div>
+                        <img src="{{ asset('images/icon-acompanamiento.svg') }}" alt="Acompañamiento"
+                            class="mx-auto h-[90px] w-auto" />
+                        <h3 class="mt-4 font-bold text-app text-[14px]">Acompañamiento técnico y<br /> estratégico</h3>
+                    </div>
+                    <!-- Item -->
+                    <div>
+                        <img src="{{ asset('images/icon-compromiso.svg') }}" alt="Compromiso sostenible"
+                            class="mx-auto h-[90px] w-auto" />
+                        <h3 class="mt-4 font-bold text-app text-[14px]">Compromiso con la innovación<br /> sostenible</h3>
+                    </div>
+                    <!-- Item -->
+                    <div>
+                        <img src="{{ asset('images/icon-soluciones.svg') }}" alt="Soluciones escalables"
+                            class="mx-auto h-[90px] w-auto" />
+                        <h3 class="mt-4 font-bold text-app text-[14px]">Soluciones personalizadas y<br /> escalables</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,23 +135,19 @@
 
     <!-- Misión / Visión / Valores -->
     <section
-        class="py-20 relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 min-h-[calc(100vh-4rem)]">
+        class="py-[78px] relative mx-auto max-w-6xl px-6 md:px-10 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-30">
         <!-- Izquierda: Misión / Visión -->
         <div class="space-y-16">
-            <div class="text-center">
+            <div class="text-center lg:text-left max-w-md">
                 <h3 class="text-4xl font-extrabold tracking-wide text-app font-century">MISIÓN</h3>
-                <p class="mt-6 text-slate-600 leading-relaxed max-w-xl mx-auto font-now">
-                    Diseñar, implementar y mantener soluciones tecnológicas de alto impacto que fortalezcan la
-                    infraestructura digital de nuestros clientes, impulsando su crecimiento sostenible, su seguridad
-                    operativa y su ventaja competitiva en el mercado.
+                <p class="mt-6 text-black leading-relaxed mx-auto font-now">
+                    Diseñar, implementar y mantener soluciones tecnológicas de alto impacto que fortalezcan la infraestructura digital de nuestros clientes, impulsando su crecimiento sostenible, su seguridad operativa y su ventaja competitiva en el mercado.
                 </p>
             </div>
-            <div class="text-center">
+            <div class="text-center lg:text-left max-w-md">
                 <h3 class="text-4xl font-extrabold tracking-wide text-app font-century">VISIÓN</h3>
-                <p class="mt-6 text-slate-600 leading-relaxed max-w-xl mx-auto font-now">
-                    Consolidarnos como una empresa líder en innovación tecnológica, reconocida por la calidad de
-                    nuestros servicios, la excelencia de nuestro equipo humano y el compromiso constante con el
-                    desarrollo sostenible y responsable.
+                <p class="mt-6 text-black leading-relaxed mx-auto font-now">
+                    Consolidarnos como una empresa líder en innovación tecnológica, reconocida a nivel nacional e internacional por la calidad de nuestros servicios, la excelencia de nuestro equipo humano y el compromiso constante con el desarrollo sostenible y responsable.
                 </p>
             </div>
         </div>
@@ -158,77 +157,73 @@
             <h3 class="text-4xl font-extrabold tracking-wide text-app font-century text-center lg:text-left">
                 VALORES</h3>
             <ul class="mt-8 space-y-6 text-slate-600 font-now">
-                <li>
-                    <span class="inline-block align-top text-sky-600 mr-3">◆</span>
-                    <span class="font-semibold text-app font-century">Innovación continua</span>. Incorporamos
-                    tecnologías
-                    emergentes para desarrollar soluciones que se adelantan a las necesidades del mercado.
+                <li class="text-black flex flex-col">
+                    <div>
+                        <span class="inline-block align-top text-sky-600 mr-3">◆</span>
+                        <span class="font-semibold font-century">Innovación continua</span>
+                    </div>
+                    Incorporamos tecnologías emergentes para desarrollar soluciones que se adelantan a las necesidades del mercado.
                 </li>
-                <li>
-                    <span class="inline-block align-top text-sky-600 mr-3">◆</span>
-                    <span class="font-semibold text-app font-century">Compromiso</span>. Acompañamos cada proyecto
-                    con
-                    responsabilidad, cercanía y un firme enfoque en resultados concretos.
+                <li class="text-black flex flex-col">
+                    <div>
+                        <span class="inline-block align-top text-sky-600 mr-3">◆</span>
+                        <span class="font-semibold font-century">Compromiso</span>
+                    </div>
+                    Acompañamos cada proyecto con responsabilidad, cercanía y un firme enfoque en resultados concretos.
                 </li>
-                <li>
-                    <span class="inline-block align-top text-sky-600 mr-3">◆</span>
-                    <span class="font-semibold text-app font-century">Calidad y eficiencia</span>. Diseñamos
-                    soluciones
-                    robustas, seguras y optimizadas para generar valor sostenible.
+                <li class="text-black flex flex-col">
+                    <div>
+                        <span class="inline-block align-top text-sky-600 mr-3">◆</span>
+                        <span class="font-semibold font-century">Calidad y eficiencia</span>
+                    </div>
+                    Diseñamos soluciones robustas, seguras y optimizadas para generar valor sostenible.
                 </li>
-                <li>
-                    <span class="inline-block align-top text-sky-600 mr-3">◆</span>
-                    <span class="font-semibold text-app font-century">Confianza</span>. Construimos relaciones
-                    sólidas
-                    basadas en la transparencia, la integridad y el respeto mutuo.
+                <li class="text-black flex flex-col">
+                    <div>
+                        <span class="inline-block align-top text-sky-600 mr-3">◆</span>
+                        <span class="font-semibold font-century">Confianza</span>
+                    </div>
+                    Construimos relaciones sólidas basadas en la transparencia, la integridad y el respeto mutuo.
                 </li>
-                <li>
-                    <span class="inline-block align-top text-sky-600 mr-3">◆</span>
-                    <span class="font-semibold text-app font-century">Sostenibilidad</span>. Impulsamos una
-                    tecnología
-                    consciente que equilibra eficiencia operativa con responsabilidad ambiental.
+                <li class="text-black flex flex-col">
+                    <div>
+                        <span class="inline-block align-top text-sky-600 mr-3">◆</span>
+                        <span class="font-semibold font-century">Sostenibilidad</span>
+                    </div>
+                    Impulsamos una tecnología consciente, que equilibra eficiencia operativa con responsabilidad ambiental.
                 </li>
             </ul>
         </div>
     </section>
 
     <!-- Contacto -->
-    <section class="relative py-20 bg-cover bg-center"
+    <section class="relative py-[38px] bg-cover bg-center"
         style="background-image: url('{{ asset('images/bg-contacto.jpg') }}');">
         <div class="absolute inset-0 bg-white/40"></div>
         <div class="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-app font-century">¡Contáctanos!</h2>
-            <p class="mt-4 text-lg text-app/80 font-now">y da el siguiente paso hacia una infraestructura digital
-                más
-                eficiente, segura y escalable.</p>
+            <h2 class="text-4xl md:text-5xl text-app font-extrabold font-century mb-10 lg:mb-[35px]">Contáctanos!</h2>
+            <p class="mt-4 text-lg lg:text-[24px] max-w-[566px] mx-auto text-app font-century">
+                y da el siguiente paso hacia una infraestructura digital más eficiente, segura y escalable.
+            </p>
 
-            <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div>
-                    <a href="https://www.google.com/maps/place/Av.+Apoquindo+4501,+Piso+11,+Las+Condes,+Regi%C3%B3n+Metropolitana,+Chile/@-33.462126,-70.666666,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c4d5b5b5b5b5:0x1b1b1b1b1b1b1b1b!8m2!3d-33.462126!4d-70.666666" target="_blank">
-                        <img src="{{ asset('images/icon-direccion.png') }}" alt="Dirección" class="mx-auto h-20 w-auto" />
-                        <h4 class="mt-4 font-semibold text-sky-800 font-century">Dirección</h4>
-                        <p class="mt-2 text-app font-now">Av. Apoquindo 4501, piso 11, Las Condes, Región
-                            Metropolitana, Chile
-                        </p>
-                    </a>
-                </div>
+            <div class="mt-[40px] grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-[566px]">
                 <div>
                     <a href="mailto:contacto@itnexvel.com" target="_blank">
-                        <img src="{{ asset('images/icon-correo.png') }}" alt="Correo" class="mx-auto h-20 w-auto" />
-                        <h4 class="mt-4 font-semibold text-sky-800 font-century">Correo electrónico</h4>
-                        <p class="mt-2 text-app font-now">contacto@itnexvel.com</p>
+                        <img src="{{ asset('images/icon-correo.png') }}" alt="Correo" class="mx-auto h-[60px] w-auto" />
+                        <h4 class="mt-[30px] font-semibold text-sky-800 font-century">Correo electrónico</h4>
+                        <p class="mt-2 font-now text-gray-700 underline">contacto@itnexvel.com</p>
                     </a>
                 </div>
                 <div>
                     <a href="tel:+56912345678" target="_blank">
-                        <img src="{{ asset('images/icon-telefono.png') }}" alt="Teléfono" class="mx-auto h-20 w-auto" />
-                        <h4 class="mt-4 font-semibold text-sky-800 font-century">Teléfono</h4>
-                        <p class="mt-2 text-app font-now">+56 9 1234 5678</p>
+                        <img src="{{ asset('images/icon-telefono.png') }}" alt="Teléfono" class="mx-auto h-[60px] w-auto" />
+                        <h4 class="mt-[30px] font-semibold text-sky-800 font-century">Teléfono</h4>
+                        <p class="mt-2 font-now text-gray-700">+56 9 1234 5678</p>
                     </a>
                 </div>
             </div>
 
-            <div class="mt-12 flex items-center justify-center gap-8 font-now">
+            <div class="mt-[90px] flex items-center justify-center gap-8 font-now">
                 <a href="#" target="_blank" aria-label="Twitter"
                     class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
                     <img src="{{ asset('images/icon-x.png') }}" class="h-10 w-10" alt="Twitter" />
