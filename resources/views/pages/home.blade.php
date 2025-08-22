@@ -1,6 +1,6 @@
 <x-layouts.guest :title="__('IT NEXVEL')">
     <section class="relative min-h-screen w-full bg-cover bg-center flex items-center lg:items-end justify-start"
-        style="background-image: url('{{ asset('images/home-bg.jpg') }}');">
+        style="background-image: url('{{ asset('images/home-bg.jpg?v=2025') }}');">
         <!-- Overlay / gradient to match the reference look -->
         <div class="absolute inset-0 bg-gradient-to-tr from-[#0b1020]/90 via-sky-500/30 to-transparent"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white"></div>
@@ -8,7 +8,7 @@
         <!-- Content -->
         <div class="relative mx-auto max-w-7xl w-full px-6 md:px-10 lg:px-16 h-full flex items-center lg:items-end">
             <div class="pb-14 md:pb-20 lg:pb-24">
-                <img src="{{ asset('images/logo.png') }}" alt="IT NEXVEL"
+                <img src="{{ asset('images/logo.png?v=2025') }}" alt="IT NEXVEL"
                     class="h-14 md:h-16 lg:h-36 w-auto drop-shadow-sm select-none" />
 
                 <h1 class="mt-8 text-4xl lg:text-6xl font-medium leading-tight tracking-wide text-app font-now">
@@ -27,7 +27,7 @@
             <div class="relative col-span-full lg:col-span-5">
                 <img src="{{ asset('images/bombilla-top.svg') }}" alt="Icono superior" class="h-16 lg:h-24 w-auto" />
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-app leading-tight font-century">
-                    En <img src="{{ asset('images/logo.png') }}" alt="IT NEXVEL" class="inline h-10 md:h-10 lg:h-14 top-[-6px] relative w-auto drop-shadow-sm select-none" />
+                    En <img src="{{ asset('images/logo.png?v=2025') }}" alt="IT NEXVEL" class="inline h-10 md:h-10 lg:h-14 top-[-6px] relative w-auto drop-shadow-sm select-none" />
                      transformamos <br /> tecnología en <br /> soluciones reales.
                 </h2>
                 <img src="{{ asset('images/bombilla-bottom.svg') }}" alt="Icono inferior" class="h-16 lg:h-24 w-auto" />
@@ -56,7 +56,7 @@
     <section class="py-20">
         <div
             class="py-10 relative bg-cover bg-center text-white min-h-[calc(80vh-8rem)] flex items-center font-century"
-            style="background-image: url('{{ asset('images/bg-nuestros-servicios.jpg') }}');">
+            style="background-image: url('{{ asset('images/bg-nuestros-servicios.jpg?v=2025') }}');">
             {{-- <div class="absolute inset-0 bg-[#0b2d5a]/70"></div> --}}
             <div class="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-12">NUESTROS SERVICIOS</h2>
