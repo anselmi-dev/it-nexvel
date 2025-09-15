@@ -224,17 +224,17 @@
             </div>
 
             <div class="mt-[90px] flex items-center justify-center gap-8 font-now">
-                <a href="#" target="_blank" aria-label="Twitter"
+                <a href="https://x.com/itnexvel" target="_blank" aria-label="Twitter"
                     class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
                     <img src="{{ asset('images/icon-x.png') }}" class="h-10 w-10" alt="Twitter" />
                     <span>Twitter</span>
                 </a>
-                <a href="#" target="_blank" aria-label="LinkedIn"
+                <a href="https://linkedin.com/company/it-nexvel" target="_blank" aria-label="LinkedIn"
                     class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
                     <img src="{{ asset('images/icon-linkedin.png') }}" class="h-10 w-10" alt="LinkedIn" />
                     <span>LinkedIn</span>
                 </a>
-                <a href="#" target="_blank" aria-label="Instagram"
+                <a href="https://www.instagram.com/itnexvel/" target="_blank" aria-label="Instagram"
                     class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
                     <img src="{{ asset('images/icon-instagram.png') }}" class="h-10 w-10" alt="Instagram" />
                     <span>Instagram</span>
