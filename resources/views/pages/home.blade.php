@@ -206,7 +206,7 @@
                 y da el siguiente paso hacia una infraestructura digital más eficiente, segura y escalable.
             </p>
 
-            <div class="mt-[40px] grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-[566px]">
+            <div class="mt-[40px] grid grid-cols-1 md:grid-cols-1 gap-10 mx-auto max-w-[566px]">
                 <div>
                     <a href="mailto:contacto@itnexvel.com" target="_blank">
                         <img src="{{ asset('images/icon-correo.png') }}" alt="Correo" class="mx-auto h-[60px] w-auto" />
@@ -214,13 +214,13 @@
                         <p class="mt-2 font-now text-gray-700 underline">contacto@itnexvel.com</p>
                     </a>
                 </div>
-                <div>
+                {{-- <div>
                     <a href="tel:+56912345678" target="_blank">
                         <img src="{{ asset('images/icon-telefono.png') }}" alt="Teléfono" class="mx-auto h-[60px] w-auto" />
                         <h4 class="mt-[30px] font-semibold text-sky-800 font-century">Teléfono</h4>
                         <p class="mt-2 font-now text-gray-700">+56 9 1234 5678</p>
                     </a>
-                </div>
+                </div> --}}
             </div>
 
             <div class="mt-[90px] flex items-center justify-center gap-8 font-now">
