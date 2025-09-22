@@ -1,2 +1,14 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://itnexvel.com/sitemap.xml
+
+# Optimización para motores de búsqueda
+Crawl-delay: 1
+
+# Permitir acceso a recursos importantes
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/

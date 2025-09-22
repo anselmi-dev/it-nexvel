@@ -1,5 +1,5 @@
 <x-layouts.guest :title="__('IT NEXVEL')">
-    <section class="relative min-h-screen w-full bg-cover bg-center flex items-center lg:items-end justify-start"
+    <section class="relative min-h-screen w-full bg-cover bg-center flex items-center justify-start"
         style="background-image: url('{{ asset('images/home-bg.jpg?v=2025') }}');">
         <!-- Overlay / gradient to match the reference look -->
         <div class="absolute inset-0 bg-gradient-to-tr from-[#0b1020]/90 via-sky-500/30 to-transparent"></div>

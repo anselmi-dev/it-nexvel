@@ -43,7 +43,7 @@
                         <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                             <div
                                 class="flex size-11 flex-none items-center justify-center rounded-lg bg-primary-50 group-hover:bg-secondary-300">
-                                <x-icons.infrastructure class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                                <x-icons.infrastructure class="shrink-0 size-9 text-gray-800 _dark:text-white" />
                             </div>
                             <div class="flex-auto">
                                 <a href="{{ route('services') }}#infraestructura-tecnologica" class="block font-semibold text-gray-900">
@@ -56,7 +56,7 @@
                         <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                             <div
                                 class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-secondary-300">
-                                <x-icons.cloud class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                                <x-icons.cloud class="shrink-0 size-9 text-gray-800 _dark:text-white" />
                             </div>
                             <div class="flex-auto">
                                 <a href="{{ route('services') }}#computacion-en-la-nube-y-ciberseguridad" class="block font-semibold text-gray-900">
@@ -69,7 +69,7 @@
                         <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                             <div
                                 class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-secondary-300">
-                                <x-icons.code class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                                <x-icons.code class="shrink-0 size-9 text-gray-800 _dark:text-white" />
                             </div>
                             <div class="flex-auto">
                                 <a href="{{ route('services') }}#desarrollo-y-presencia-digital" class="block font-semibold text-gray-900">
@@ -82,7 +82,7 @@
                         <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                             <div
                                 class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-secondary-300">
-                                <x-icons.energies class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                                <x-icons.energies class="shrink-0 size-9 text-gray-800 _dark:text-white" />
                             </div>
                             <div class="flex-auto">
                                 <a href="{{ route('services') }}#energias-renovables" class="block font-semibold text-gray-900">
@@ -96,7 +96,7 @@
                             class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
                             <div
                             class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-secondary-300">
-                                <x-icons.support class="shrink-0 size-9 text-gray-800 dark:text-white" />
+                                <x-icons.support class="shrink-0 size-9 text-gray-800 _dark:text-white" />
                             </div>
                             <div class="flex-auto">
                                 <a href="{{ route('services') }}#consultoria-y-soporte-tecnico" class="block font-semibold text-gray-900">
@@ -111,7 +111,7 @@
             </div>
 
             <a href="{{ route('about') }}" class="btn relative btn-3 font-semibold text-gray-900 py-3 px-5 text-base hover:bg-primary-100 text-center"><span class="uppercase">Nosotros</span></a>
-            <a href="{{ route('contact') }}" class="btn flex justify-center items-center gap-1 py-3 px-5 text-base font-medium text-center text-white  bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 group">
+            <a href="{{ route('contact') }}" class="btn flex justify-center items-center gap-1 py-3 px-5 text-base font-medium text-center text-white  bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-blue-300 _dark:focus:ring-blue-900 group">
                 <span class="uppercase">Contactanos</span>
                 <svg class="shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
             </a>

@@ -2,6 +2,9 @@
 
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.darkmode, .darkmode *));
+
+
 @theme {
     --font-arimo: "Arimo", sans-serif;
     --font-century: "CenturyGothic", sans-serif;
