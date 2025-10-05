@@ -8,8 +8,7 @@
         <!-- Content -->
         <div class="relative mx-auto max-w-7xl w-full px-6 md:px-10 lg:px-16 h-full flex items-center lg:items-end">
             <div class="pb-14 md:pb-20 lg:pb-24">
-                <img src="{{ asset('images/logo.png?v=2025') }}" alt="IT NEXVEL"
-                    class="h-14 md:h-16 lg:h-36 w-auto drop-shadow-sm select-none" />
+                <x-app-logo-svg class="h-14 md:h-16 lg:h-36 w-auto drop-shadow-sm select-none text-app fill-app" alt="IT NEXVEL"/>
 
                 <h1 class="mt-8 text-4xl lg:text-6xl font-medium leading-tight tracking-wide text-app font-now">
                     Tecnología inteligente para un
@@ -55,32 +54,25 @@
     <!-- Our Services Section -->
     <section class="py-20">
         <div
-            class="py-10 relative bg-cover bg-center text-white min-h-[calc(80vh-8rem)] flex items-center font-century"
-            style="background-image: url('{{ asset('images/bg-nuestros-servicios.jpg?v=2025') }}');">
-            {{-- <div class="absolute inset-0 bg-[#0b2d5a]/70"></div> --}}
+            class="py-10 relative bg-cover bg-center text-white min-h-[calc(80vh-8rem)] flex items-center font-century" style="background-image: url('{{ asset('images/bg-nuestros-servicios.jpg?v=2025') }}');">
+
             <div class="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-12">NUESTROS SERVICIOS</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                    <div
-                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                        INFRAESTRUCTURA TECNOLÓGICA, CLOUD, REDES Y CIBERSEGURIDAD.
-                    </div>
-                    <div
-                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                        DOMÓTICA, INMÓTICA Y SEGURIDAD ELECTRÓNICA.
-                    </div>
-                    <div
-                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                        CONSULTORÍA, GESTIÓN & ADM. DE PROYECTOS.
-                    </div>
-                    <div
-                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                        SEO, MARKETING DIGITAL Y PRESENCIA ONLINE.
-                    </div>
-                    <div
-                        class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] flex items-center justify-center text-sm font-semibold leading-snug">
-                        FORMACIÓN ESPECIALIZADA Y OUTSOURCING IT.
-                    </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-6">
+                    @forelse($services as $service)
+                        <div
+                            class="bg-[#154269] rounded-lg px-4 py-6 min-h-[160px] lg:w-[260px] flex items-center justify-center text-sm font-semibold leading-snug transition-transform hover:scale-105 cursor-pointer"
+                            title="{{ $service->short_description }}"
+                        >
+                            <div class="text-center">
+                                <span>{{ $service->title }}</span>
+                            </div>
+                        </div>
+                    @empty
+                        <div class="col-span-full text-center text-white/70">
+                            <p>No hay servicios configurados en este momento.</p>
+                        </div>
+                    @endforelse
                 </div>
             </div>
         </div>
@@ -214,32 +206,11 @@
                         <p class="mt-2 font-now text-gray-700 underline">contacto@itnexvel.com</p>
                     </a>
                 </div>
-                {{-- <div>
-                    <a href="tel:+56912345678" target="_blank">
-                        <img src="{{ asset('images/icon-telefono.png') }}" alt="Teléfono" class="mx-auto h-[60px] w-auto" />
-                        <h4 class="mt-[30px] font-semibold text-sky-800 font-century">Teléfono</h4>
-                        <p class="mt-2 font-now text-gray-700">+56 9 1234 5678</p>
-                    </a>
-                </div> --}}
             </div>
 
-            <div class="mt-[90px] flex items-center justify-center gap-8 font-now">
-                <a href="https://x.com/itnexvel" target="_blank" aria-label="Twitter"
-                    class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
-                    <img src="{{ asset('images/icon-x.png') }}" class="h-10 w-10" alt="Twitter" />
-                    <span>Twitter</span>
-                </a>
-                <a href="https://linkedin.com/company/it-nexvel" target="_blank" aria-label="LinkedIn"
-                    class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
-                    <img src="{{ asset('images/icon-linkedin.png') }}" class="h-10 w-10" alt="LinkedIn" />
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://www.instagram.com/itnexvel/" target="_blank" aria-label="Instagram"
-                    class="transition-transform hover:scale-105 flex flex-col justify-center items-center">
-                    <img src="{{ asset('images/icon-instagram.png') }}" class="h-10 w-10" alt="Instagram" />
-                    <span>Instagram</span>
-                </a>
-            </div>
+            <x-layouts.social-brands :socialNetworks="$socialNetworks" class="mt-[90px] flex items-center justify-center gap-8 font-now flex-wrap"/>
         </div>
     </section>
+
+    <x-scroll-to-top />
 </x-layouts.guest>

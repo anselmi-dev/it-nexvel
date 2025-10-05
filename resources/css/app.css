@@ -15,3 +15,7 @@
 @theme {
     --color-app: #2D5980;
 }
+
+.network-icon > * {
+    @apply h-8 w-8;
+}
